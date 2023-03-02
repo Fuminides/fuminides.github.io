@@ -70,7 +70,8 @@ email: ""
 highlight_name: false
 ---
 
-I am a researcher of artificial intelligence at the Grupo de Inteligencia Artificial Razonamiento Aproximado (GIARA) in the Universidad Pública de Navarra, Spain in my last year of PhD. I am also a former visiting research in the Univeristy of Essex, Uk. My research interests include computational intelligence, social network analysis, XAI and computer vision. 
+
+I am a researcher of artificial intelligence at the Grupo de Inteligencia Artificial Razonamiento Aproximado (GIARA) in the Universidad Pública de Navarra, Spain in my last year of PhD. I am also a former visiting researcher in the Univeristy of Essex, Uk. My research interests include computational intelligence, social network analysis, XAI and computer vision. 
 
 My personal interests include playing the piano and the guitar, reading lots about ancient history, and practicing karate.
 

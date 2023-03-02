@@ -41,7 +41,19 @@ sections:
     design:
       columns: '2'
       view: card
-  
+
+  - block: collection
+    id: datasets
+    content:
+      title: Datasets
+      filters:
+        folders:
+          - slides
+        featured_only: false
+    design:
+      columns: '2'
+      view: card
+
   - block: collection
     id: talks
     content:
