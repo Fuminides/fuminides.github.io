@@ -1,5 +1,4 @@
 {
-  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
   "basics": {
     "name": "Javier Fumanal Idocin",
     "label": "PhD in the Public University of Navarre",
@@ -17,6 +16,11 @@
         "network": "LinkedIn",
         "username": "javier-fumanal-idocin-03b40611b",
         "url": "https://www.linkedin.com/in/javier-fumanal-idocin-03b40611b/"
+      }
+      {
+        "network": "Google Scholar",
+        "username": "Javier Fumanal-Idocin",
+        "url": "https://scholar.google.es/citations?user=llsfX8sAAAAJ&hl"
       }
     ]
   },
