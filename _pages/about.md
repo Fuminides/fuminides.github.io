@@ -17,6 +17,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Hi! I am a PhD researcher in Artificial Intelligence and Social Network Analysis. I did my PhD in the Grupo de Inteligencia y Artificial Razonamiento Aproximado in the Public University of Navarre. I am also a former visiting researcher in the University of Essex, Uk. I am soon to start a Postdoc YUFE position in the University of Essex. My research interests include computational intelligence, social network analysis, XAI and computer vision.  My research interests include computational intelligence, social network analysis, XAI and computer vision.
+Hi! I am a PhD researcher in Artificial Intelligence and Social Network Analysis. I did my PhD in the Grupo de Inteligencia y Artificial Razonamiento Aproximado (GIARA) in the Public University of Navarre under the supervision of [Prof. Humberto Bustince](https://scholar.google.es/citations?user=9SI4W2kAAAAJ&hl=es&oi=ao)
+ and [Prof. Óscar Cordón](https://scholar.google.es/citations?hl=es&user=oUmv8xgAAAAJ). During my PhD I also was a visiting researcher in the University of Essex, under the supervision of [Prof Hani Hagras](https://scholar.google.es/citations?hl=es&user=ZZ61SZwAAAAJ). Now, I am soon to start a [Postdoc YUFE position](https://www.yufe4postdocs.eu/) in the University of Essex.
 
-Besides science, my personal interests include playing the piano and the guitar, reading lots about ancient history, MTG, and karate. My favourite book is La Regenta, by Leopoldo Alas “Clarín”.
+Besides science, my personal interests include playing the piano and the guitar, reading lots about ancient history, MTG, and Karate. My favourite book is La Regenta, by Leopoldo Alas “Clarín”.
