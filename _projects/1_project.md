@@ -10,3 +10,4 @@ related_publications: false
 
 Todo lo que te debieron enseñar, pero estaban demasiado ocupados para hacerlo.
 
+[Link to download (Spanish)](https://fuminides.github.io/assets/pdf/guia_tfg.pdf)
