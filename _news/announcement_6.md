@@ -5,5 +5,4 @@ inline: true
 related_posts: false
 ---
 
-
 ["Dynamic Feature Selection based on Rule-based Learning for Explainable Classification with Uncertainty Quantification"](https://arxiv.org/abs/2508.02566) published in arXiv.

@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-PhD Thesis succesfully defended. 
+PhD Thesis succesfully defended.
