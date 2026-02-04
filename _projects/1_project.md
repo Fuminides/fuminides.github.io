@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Guia para escribir un Trabajo de Fin de Grado
-description: 
+description:
 img: assets/img/tfg.jpg
 importance: 1
 category: work

@@ -5,5 +5,4 @@ inline: true
 related_posts: false
 ---
 
-
 "Reliable Classification with Conformal Learning and Interval-Type 2 Fuzzy Sets" and "Crisp complexity of fuzzy classifiers" have been accepted for publication in 2025 IEEE International Conference on Fuzzy Systems.
