@@ -15,27 +15,28 @@ Academic personal website for **Javier Fumanal Idocin** (Postdoc YUFE MSCA fello
 
 ## Key Files & Directories
 
-| Path | Purpose |
-|------|---------|
-| `_config.yml` | Main site configuration (metadata, plugins, scholar settings) |
-| `_pages/about.md` | Landing page / homepage |
-| `_pages/research.md` | Research interests overview (rule-based learning, XAI, uncertainty, fuzzy) |
-| `_pages/publications.md` | Publications page (auto-generated from BibTeX) |
-| `_pages/projects.md` | Project showcase |
-| `_pages/exfuzzy.md` | Dedicated page for Ex-Fuzzy library |
-| `_pages/cv.md` | Curriculum vitae |
-| `_bibliography/papers.bib` | BibTeX file with all publications |
-| `_data/cv.yml` | Structured CV data |
-| `_news/` | News/announcements (markdown files) |
-| `_projects/` | Project showcase pages |
-| `_sass/` | SCSS stylesheets |
-| `assets/img/` | Images (responsive variants: 480px, 800px, 1400px) |
-| `_includes/` | Reusable Liquid template partials |
-| `_layouts/` | Page templates |
+| Path                       | Purpose                                                            |
+| -------------------------- | ------------------------------------------------------------------ |
+| `_config.yml`              | Main site configuration (metadata, plugins, scholar settings)      |
+| `_pages/about.md`          | Landing page / homepage                                            |
+| `_pages/research.md`       | Research interests overview (rule-based learning, XAI, uncertainty, fuzzy) |
+| `_pages/publications.md`   | Publications page (auto-generated from BibTeX)                     |
+| `_pages/projects.md`       | Project showcase                                                   |
+| `_pages/exfuzzy.md`        | Dedicated page for Ex-Fuzzy library                                |
+| `_pages/cv.md`             | Curriculum vitae                                                   |
+| `_bibliography/papers.bib` | BibTeX file with all publications                                  |
+| `_data/cv.yml`             | Structured CV data                                                 |
+| `_news/`                   | News/announcements (markdown files)                                |
+| `_projects/`               | Project showcase pages                                             |
+| `_sass/`                   | SCSS stylesheets                                                   |
+| `assets/img/`              | Images (responsive variants: 480px, 800px, 1400px)                 |
+| `_includes/`               | Reusable Liquid template partials                                  |
+| `_layouts/`                | Page templates                                                     |
 
 ## Navigation Order
 
 Pages appear in navbar based on `nav_order` in frontmatter:
+
 1. Research (`nav_order: 1`)
 2. Publications (`nav_order: 2`)
 3. Projects (`nav_order: 3`)
@@ -45,21 +46,26 @@ Pages appear in navbar based on `nav_order` in frontmatter:
 ## Common Tasks
 
 ### Add a new publication
+
 1. Edit `_bibliography/papers.bib` - add BibTeX entry
 2. Publications page auto-generates from this file
 
 ### Add news/announcement
+
 1. Create file in `_news/` (e.g., `_news/announcement_X.md`)
 2. Use frontmatter: `layout: post`, `date: YYYY-MM-DD`, `inline: true`
 
 ### Add a project
+
 1. Create file in `_projects/` (e.g., `_projects/X_project.md`)
 2. Include frontmatter with `title`, `description`, `img`, `importance`
 
 ### Update CV
+
 Edit `_data/cv.yml` for structured data, or `_pages/cv.md` for layout changes
 
 ### Modify styling
+
 - Global styles: `_sass/_base.scss`
 - Theme variables: `_sass/_themes.scss`
 - Component-specific: `_sass/_*.scss` files
@@ -98,6 +104,7 @@ bundle exec jekyll build --lsi
 ## Deployment
 
 Automatic via GitHub Actions:
+
 1. Push to `master` branch
 2. `broken-links.yml` workflow runs first
 3. `deploy.yml` builds and deploys to GitHub Pages

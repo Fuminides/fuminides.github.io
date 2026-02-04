@@ -71,7 +71,7 @@ predictions = fuzzy_clf.predict(X_test)
 ### Core Library Paper
 
 **Ex-Fuzzy: A Library for Symbolic Explainable AI Through Fuzzy Logic Programming** (Neurocomputing, 2024)
-*Fumanal-Idocin & Andreu-Perez*
+_Fumanal-Idocin & Andreu-Perez_
 The foundational paper describing the library's architecture, capabilities, and design philosophy. Introduces the scikit-learn compatible API and visualization tools.
 
 ---
@@ -79,19 +79,19 @@ The foundational paper describing the library's architecture, capabilities, and 
 ### New Methods Implemented in Ex-Fuzzy
 
 **A Fast Interpretable Fuzzy Tree Learner** (arXiv, 2025)
-*Fumanal-Idocin, Fernandez-Peralta & Andreu-Perez*
+_Fumanal-Idocin, Fernandez-Peralta & Andreu-Perez_
 Introduces a novel fuzzy decision tree algorithm optimized for speed and interpretability. The implementation is available in Ex-Fuzzy as an alternative to rule-based classifiers.
 
 **Compact Rule-Based Classifier Learning via Gradient Descent** (arXiv, 2025)
-*Fumanal-Idocin, Fernandez-Peralta & Andreu-Perez*
+_Fumanal-Idocin, Fernandez-Peralta & Andreu-Perez_
 Implements gradient-based optimization for learning compact fuzzy rule bases, extending Ex-Fuzzy beyond genetic algorithms to differentiable learning.
 
 **Reliable Classification with Conformal Learning and Interval-Type 2 Fuzzy Sets** (FUZZ-IEEE, 2025)
-*Fumanal-Idocin & Andreu-Perez*
+_Fumanal-Idocin & Andreu-Perez_
 Combines conformal prediction with Interval Type-2 fuzzy sets for uncertainty-aware classification. Extends Ex-Fuzzy's IT2 capabilities with reliability guarantees.
 
 **Crisp Complexity of Fuzzy Classifiers** (FUZZ-IEEE, 2025)
-*Fernandez-Peralta, Fumanal-Idocin & Andreu-Perez*
+_Fernandez-Peralta, Fumanal-Idocin & Andreu-Perez_
 Proposes new complexity metrics for fuzzy classifiers. Uses Ex-Fuzzy to empirically study the relationship between rule complexity and model performance.
 
 ---
@@ -99,11 +99,11 @@ Proposes new complexity metrics for fuzzy classifiers. Uses Ex-Fuzzy to empirica
 ### Applications Using Ex-Fuzzy
 
 **ArtXAI: Explainable Artificial Intelligence Curates Deep Representation Learning for Artistic Images Using Fuzzy Techniques** (IEEE Trans. Fuzzy Systems, 2023)
-*Fumanal-Idocin, Andreu-Perez, Cordón, Hagras & Bustince*
+_Fumanal-Idocin, Andreu-Perez, Cordón, Hagras & Bustince_
 Uses Ex-Fuzzy to provide explainable classification of artistic images by learning fuzzy rules over deep learning embeddings. Demonstrates how fuzzy rules can interpret neural network representations.
 
 **Interpreting Contrastive Embeddings in Specific Domains with Fuzzy Rules** (FUZZ-IEEE, 2024)
-*Fumanal-Idocin, Jamalifard & Andreu-Perez*
+_Fumanal-Idocin, Jamalifard & Andreu-Perez_
 Applies Ex-Fuzzy to interpret contrastive learning embeddings (e.g., CLIP) using domain-specific fuzzy rules, bridging black-box representations with human-understandable concepts.
 
 ---
@@ -111,7 +111,7 @@ Applies Ex-Fuzzy to interpret contrastive learning embeddings (e.g., CLIP) using
 ### Comparison and Benchmarking
 
 **Efficient Online Generation of Fuzzy Measures via Aggregation Functions** (Information Fusion, 2026)
-*Gonzalez-Garcia, Horanská, Beliakov & Bustince*
+_Gonzalez-Garcia, Horanská, Beliakov & Bustince_
 Uses Ex-Fuzzy as a baseline for comparing fuzzy measure generation methods, demonstrating the library's utility as a benchmarking tool in the fuzzy systems community.
 
 ---
