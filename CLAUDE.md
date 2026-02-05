@@ -22,7 +22,7 @@ Academic personal website for **Javier Fumanal Idocin** (Postdoc YUFE MSCA fello
 | `_pages/research.md`       | Research interests overview (rule-based learning, XAI, uncertainty, fuzzy) |
 | `_pages/publications.md`   | Publications page (auto-generated from BibTeX)                     |
 | `_pages/projects.md`       | Project showcase                                                   |
-| `_pages/exfuzzy.md`        | Dedicated page for Ex-Fuzzy library                                |
+| `_pages/software.md`       | Software page (Ex-Fuzzy and other tools)                           |
 | `_pages/cv.md`             | Curriculum vitae                                                   |
 | `_bibliography/papers.bib` | BibTeX file with all publications                                  |
 | `_data/cv.yml`             | Structured CV data                                                 |
@@ -40,7 +40,7 @@ Pages appear in navbar based on `nav_order` in frontmatter:
 1. Research (`nav_order: 1`)
 2. Publications (`nav_order: 2`)
 3. Projects (`nav_order: 3`)
-4. Ex-Fuzzy (`nav_order: 4`)
+4. Software (`nav_order: 4`)
 5. CV (`nav_order: 5`)
 
 ## Common Tasks
