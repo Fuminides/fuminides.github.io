@@ -15,23 +15,23 @@ Academic personal website for **Javier Fumanal Idocin** (Postdoc YUFE MSCA fello
 
 ## Key Files & Directories
 
-| Path                       | Purpose                                                            |
-| -------------------------- | ------------------------------------------------------------------ |
-| `_config.yml`              | Main site configuration (metadata, plugins, scholar settings)      |
-| `_pages/about.md`          | Landing page / homepage                                            |
+| Path                       | Purpose                                                                    |
+| -------------------------- | -------------------------------------------------------------------------- |
+| `_config.yml`              | Main site configuration (metadata, plugins, scholar settings)              |
+| `_pages/about.md`          | Landing page / homepage                                                    |
 | `_pages/research.md`       | Research interests overview (rule-based learning, XAI, uncertainty, fuzzy) |
-| `_pages/publications.md`   | Publications page (auto-generated from BibTeX)                     |
-| `_pages/projects.md`       | Project showcase                                                   |
-| `_pages/software.md`       | Software page (Ex-Fuzzy and other tools)                           |
-| `_pages/cv.md`             | Curriculum vitae                                                   |
-| `_bibliography/papers.bib` | BibTeX file with all publications                                  |
-| `_data/cv.yml`             | Structured CV data                                                 |
-| `_news/`                   | News/announcements (markdown files)                                |
-| `_projects/`               | Project showcase pages                                             |
-| `_sass/`                   | SCSS stylesheets                                                   |
-| `assets/img/`              | Images (responsive variants: 480px, 800px, 1400px)                 |
-| `_includes/`               | Reusable Liquid template partials                                  |
-| `_layouts/`                | Page templates                                                     |
+| `_pages/publications.md`   | Publications page (auto-generated from BibTeX)                             |
+| `_pages/projects.md`       | Project showcase                                                           |
+| `_pages/software.md`       | Software page (Ex-Fuzzy and other tools)                                   |
+| `_pages/cv.md`             | Curriculum vitae                                                           |
+| `_bibliography/papers.bib` | BibTeX file with all publications                                          |
+| `_data/cv.yml`             | Structured CV data                                                         |
+| `_news/`                   | News/announcements (markdown files)                                        |
+| `_projects/`               | Project showcase pages                                                     |
+| `_sass/`                   | SCSS stylesheets                                                           |
+| `assets/img/`              | Images (responsive variants: 480px, 800px, 1400px)                         |
+| `_includes/`               | Reusable Liquid template partials                                          |
+| `_layouts/`                | Page templates                                                             |
 
 ## Navigation Order
 

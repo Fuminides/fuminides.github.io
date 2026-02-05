@@ -87,11 +87,9 @@ Introduces a novel fuzzy decision tree algorithm optimized for speed and interpr
 _Fumanal-Idocin & Andreu-Perez_
 Combines conformal prediction with Interval Type-2 fuzzy sets for uncertainty-aware classification. Extends Ex-Fuzzy's IT2 capabilities with reliability guarantees. Still WIP to bring it to the full library.
 
-
 ---
 
 #### (Some) Papers Using Ex-Fuzzy
-
 
 **Compact Rule-Based Classifier Learning via Gradient Descent** (arXiv, 2025)
 _Fumanal-Idocin, Fernandez-Peralta & Andreu-Perez_
