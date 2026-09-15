@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-[Ex-Fuzzy](https://github.com/fuminides/ex-fuzzy) updated with regression support, GPU acceleration, and [FERL](https://arxiv.org/abs/2608.05859) (Fuzzy Evidential Rule Learning). FERL is a highly performant classifier with Dempster-Shafer, Out of Distribution Detection and Abstention, so you can now use an explainable model as well for the most challenging tasks with Ex-Fuzzy!
+[Ex-Fuzzy](https://github.com/fuminides/ex-fuzzy) updated with regression support, GPU acceleration, and [FERL](https://arxiv.org/abs/2608.05859) (Fast Evidential Rule Learning). FERL is a highly performant classifier with Dempster-Shafer, Out of Distribution Detection and Abstention, so you can now use an explainable model as well for the most challenging tasks with Ex-Fuzzy!

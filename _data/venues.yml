@@ -4,3 +4,15 @@
 
 "PhysRev":
   url: https://journals.aps.org/
+
+"arXiv":
+  url: https://arxiv.org/
+  color: "#b31b1b"
+
+"IEEE TFS":
+  url: https://cis.ieee.org/publications/t-fuzzy-systems
+  color: "#00629b"
+
+"IJCLR":
+  url: https://ijclr.github.io/
+  color: "#2e7d32"

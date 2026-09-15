@@ -114,7 +114,7 @@ Proposes new complexity metrics for fuzzy classifiers. Uses Ex-Fuzzy to empirica
 ### News and Updates
 
 - **2026**: [Ex-Fuzzy 3.1.1](https://pypi.org/project/ex-fuzzy/) released: up to 20x faster than 2.X versions, significant accuracy improvements in rule-based methods, and state-of-the-art results among interpretable classifiers with compact rule bases
-- **2026**: Regression support, GPU acceleration, and [FERL](https://arxiv.org/abs/2608.05859) (Fuzzy Evidential Rule Learning) added, with Dempster-Shafer reasoning, out-of-distribution detection, and abstention
+- **2026**: Regression support, GPU acceleration, and [FERL](https://arxiv.org/abs/2608.05859) (Fast Evidential Rule Learning) added, with Dempster-Shafer reasoning, out-of-distribution detection, and abstention
 - **2025**: Evox with GPU support added. Massive speedups in genetic optimization as well.
 - **2025**: Three papers accepted at FUZZ-IEEE 2025 using Ex-Fuzzy
 - **2024**: Ex-Fuzzy 2.0 released with improved performance and new features
