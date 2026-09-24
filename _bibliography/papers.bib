@@ -22,13 +22,13 @@
   abstract={Concept Bottleneck Models (CBMs) are a relevant tool for explainable Artificial Intelligence because they make their predictions through human-interpretable symbols. However, high task accuracy does not guarantee that these symbols are detected faithfully: jointly trained CBMs may encode task-specific shortcuts in the bottleneck, making their explanations unreliable. In this paper, we study concept-detection reliability by swapping independently trained concept detectors and classification heads that share the same symbolic vocabulary. We use the resulting performance degradation, concept-level metrics, and symbol-wise uncertainty estimates to identify concepts that are especially prone to spurious firing. Finally, we propose a reliability-aware training strategy in which a shared concept detector is optimized with multiple classification heads and penalized for relying on globally or instance-wise unreliable symbols. On CUB-200-2011 with full concept supervision, detectors and heads are almost freely interchangeable (swap drop below one accuracy point, relative retention above 99%, and no concept detected below chance), whereas on a controlled synthetic task we show that, as the concept-supervision weight is reduced, models keep near-perfect task accuracy while swapped accuracy and agreement with the ground-truth concepts collapse to chance. Our reliability-aware training substantially mitigates this leakage, roughly doubling swap accuracy in the leaky regime.}
 }
 
-@article{fumanal2026hypernetworks,
+@inproceedings{fumanal2026hypernetworks,
   title={Hypernetworks for Dynamic Feature Selection},
   author={Fumanal-Idocin, Javier and Fernandez-Peralta, Raquel and Andreu-Perez, Javier},
-  journal={arXiv preprint arXiv:2605.12278},
+  booktitle={Advances in Neural Information Processing Systems},
   year={2026},
   arxiv={2605.12278},
-  abbr={arXiv},
+  abbr={NeurIPS},
   selected={true},
   abstract={Dynamic feature selection (DFS) is a machine learning framework in which features are acquired sequentially for individual samples under budget constraints. The exponential growth in the number of possible feature acquisition paths forces a DFS model to balance fitting specific scenarios against maintaining general performance, even when the feature space is moderate in size. In this paper, we study the structural limitations of existing DFS approaches to achieve an optimal solution. Then, we propose Hyper-DFS, a hypernetwork-based DFS approach that generates feature subset-specific classifier parameters on demand. We show that the use of hypernetworks compared to mask-embedding methods results in a smaller structural complexity bound. We also use a Set Transformer encoding to create a smooth conditioning space for the hypernetwork, so that functionally similar tasks are also geometrically close. In our benchmarks, Hyper-DFS outperforms all state-of-the-art approaches on synthetic and real-life tabular data. It is also competitive or superior across all image datasets tested, and shows substantially stronger zero-shot generalisation to feature subsets never seen during training than existing DFS approaches.}
 }
