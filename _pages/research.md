@@ -17,7 +17,7 @@ I am deeply interested in **rule-based learning systems** that produce interpret
 
 **Fuzzy logic** provides the mathematical foundation for much of this work. It allows us to model imprecise concepts using degrees of membership rather than binary true/false values, which makes it particularly suited for rules that read like the ones people would write. I maintain [Ex-Fuzzy](/software/), a Python library that makes fuzzy logic accessible to the broader machine learning community.
 
-**Try it in your browser:** [**Ex-Fuzzy Lab**](https://fuminides.github.io/exfuzzy-lab/) is a visual workspace where you can upload your own dataset, run real Ex-Fuzzy experiments and explore the rules behind the results, with nothing to install.
+**Try it in your browser:** [Ex-Fuzzy Lab](https://fuminides.github.io/exfuzzy-lab/) is a visual workspace where you can upload your own dataset, run real Ex-Fuzzy experiments and explore the rules behind the results, with nothing to install.
 
 ---
 
