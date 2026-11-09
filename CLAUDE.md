@@ -37,11 +37,12 @@ Academic personal website for **Javier Fumanal Idocin** (Postdoc YUFE MSCA fello
 
 Pages appear in navbar based on `nav_order` in frontmatter:
 
-1. Research (`nav_order: 1`)
-2. Publications (`nav_order: 2`)
-3. Projects (`nav_order: 3`)
-4. Software (`nav_order: 4`)
-5. CV (`nav_order: 5`)
+1. Publications (`nav_order: 2`)
+2. Software (`nav_order: 4`)
+3. Vibe Projects (`nav_order: 5`, `_pages/vibe.md`)
+4. CV (`nav_order: 6`)
+
+Research and Projects are hidden from the navbar (`nav: false`) but still built, so `/research/` and `/projects/` keep working.
 
 ## Common Tasks
 
