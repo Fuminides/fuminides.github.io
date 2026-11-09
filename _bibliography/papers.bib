@@ -8,7 +8,9 @@
   abbr={arXiv},
   selected={true},
   keywords={ex-fuzzy},
-  abstract={Interpretable classification often requires more than accurate predictions for real-life deployment: models should be transparent about the evidence behind their decisions and abstain when they cannot decide reliably. We introduce Fast Evidential Rule Learning (FERL), a method that learns interpretable, accurate fuzzy rule models whose outputs are evidential. Unlike post-hoc calibration, FERL's belief, plausibility, and abstention capabilities arise directly from the fuzzy memberships in a single deterministic pass, with no auxiliary head, held-out set, or repeated inference. Our theoretical analysis further shows that FERL is Lipschitz stable, which means that its evidential outputs vary smoothly with the input. Against state-of-the-art rule learners, FERL is statistically significantly more accurate across a 30 tabular-dataset benchmark (+2.6% average accuracy over the second best). Its native set predictions attain the best utility-discounted accuracy among credal classifiers (u65/u80 = 0.80/0.83 vs. 0.79/0.80 for the naive credal classifier), at higher set coverage (0.92 vs. ≤0.82). FERL also matches dedicated out-of-distribution detectors on tabular near-OOD detection (77.7 vs. 77.4 AUROC for the strongest baseline). Under detector-class-disjoint concept-bottleneck evaluation, its it is within 2.3 AUROC points of the strongest dedicated detector on both CUB and AwA2, while attaining the best AwA2 AUPR-Out (68.3) and novel-class rejection (57.2), while being able to name which attributes are anomalous.}
+  abstract={Interpretable classification often requires more than accurate predictions for real-life deployment: models should be transparent about the evidence behind their decisions and abstain when they cannot decide reliably. We introduce Fast Evidential Rule Learning (FERL), a method that learns interpretable, accurate fuzzy rule models whose outputs are evidential. Unlike post-hoc calibration, FERL's belief, plausibility, and abstention capabilities arise directly from the fuzzy memberships in a single deterministic pass, with no auxiliary head, held-out set, or repeated inference. Our theoretical analysis further shows that FERL is Lipschitz stable, which means that its evidential outputs vary smoothly with the input. Against state-of-the-art rule learners, FERL is statistically significantly more accurate across a 30 tabular-dataset benchmark (+2.6% average accuracy over the second best). Its native set predictions attain the best utility-discounted accuracy among credal classifiers (u65/u80 = 0.80/0.83 vs. 0.79/0.80 for the naive credal classifier), at higher set coverage (0.92 vs. ≤0.82). FERL also matches dedicated out-of-distribution detectors on tabular near-OOD detection (77.7 vs. 77.4 AUROC for the strongest baseline). Under detector-class-disjoint concept-bottleneck evaluation, it is within 2.3 AUROC points of the strongest dedicated detector on both CUB and AwA2, while attaining the best AwA2 AUPR-Out (68.3) and novel-class rejection (57.2), while being able to name which attributes are anomalous.},
+  preview={fumanal2026evidential.png},
+  bibtex_show={true}
 }
 
 @inproceedings{fumanal2026assessing,
@@ -19,7 +21,9 @@
   arxiv={2606.16535},
   abbr={IJCLR},
   selected={true},
-  abstract={Concept Bottleneck Models (CBMs) are a relevant tool for explainable Artificial Intelligence because they make their predictions through human-interpretable symbols. However, high task accuracy does not guarantee that these symbols are detected faithfully: jointly trained CBMs may encode task-specific shortcuts in the bottleneck, making their explanations unreliable. In this paper, we study concept-detection reliability by swapping independently trained concept detectors and classification heads that share the same symbolic vocabulary. We use the resulting performance degradation, concept-level metrics, and symbol-wise uncertainty estimates to identify concepts that are especially prone to spurious firing. Finally, we propose a reliability-aware training strategy in which a shared concept detector is optimized with multiple classification heads and penalized for relying on globally or instance-wise unreliable symbols. On CUB-200-2011 with full concept supervision, detectors and heads are almost freely interchangeable (swap drop below one accuracy point, relative retention above 99%, and no concept detected below chance), whereas on a controlled synthetic task we show that, as the concept-supervision weight is reduced, models keep near-perfect task accuracy while swapped accuracy and agreement with the ground-truth concepts collapse to chance. Our reliability-aware training substantially mitigates this leakage, roughly doubling swap accuracy in the leaky regime.}
+  abstract={Concept Bottleneck Models (CBMs) are a relevant tool for explainable Artificial Intelligence because they make their predictions through human-interpretable symbols. However, high task accuracy does not guarantee that these symbols are detected faithfully: jointly trained CBMs may encode task-specific shortcuts in the bottleneck, making their explanations unreliable. In this paper, we study concept-detection reliability by swapping independently trained concept detectors and classification heads that share the same symbolic vocabulary. We use the resulting performance degradation, concept-level metrics, and symbol-wise uncertainty estimates to identify concepts that are especially prone to spurious firing. Finally, we propose a reliability-aware training strategy in which a shared concept detector is optimized with multiple classification heads and penalized for relying on globally or instance-wise unreliable symbols. On CUB-200-2011 with full concept supervision, detectors and heads are almost freely interchangeable (swap drop below one accuracy point, relative retention above 99%, and no concept detected below chance), whereas on a controlled synthetic task we show that, as the concept-supervision weight is reduced, models keep near-perfect task accuracy while swapped accuracy and agreement with the ground-truth concepts collapse to chance. Our reliability-aware training substantially mitigates this leakage, roughly doubling swap accuracy in the leaky regime.},
+  preview={fumanal2026assessing.png},
+  bibtex_show={true}
 }
 
 @inproceedings{fumanal2026hypernetworks,
@@ -30,7 +34,9 @@
   arxiv={2605.12278},
   abbr={NeurIPS},
   selected={true},
-  abstract={Dynamic feature selection (DFS) is a machine learning framework in which features are acquired sequentially for individual samples under budget constraints. The exponential growth in the number of possible feature acquisition paths forces a DFS model to balance fitting specific scenarios against maintaining general performance, even when the feature space is moderate in size. In this paper, we study the structural limitations of existing DFS approaches to achieve an optimal solution. Then, we propose Hyper-DFS, a hypernetwork-based DFS approach that generates feature subset-specific classifier parameters on demand. We show that the use of hypernetworks compared to mask-embedding methods results in a smaller structural complexity bound. We also use a Set Transformer encoding to create a smooth conditioning space for the hypernetwork, so that functionally similar tasks are also geometrically close. In our benchmarks, Hyper-DFS outperforms all state-of-the-art approaches on synthetic and real-life tabular data. It is also competitive or superior across all image datasets tested, and shows substantially stronger zero-shot generalisation to feature subsets never seen during training than existing DFS approaches.}
+  abstract={Dynamic feature selection (DFS) is a machine learning framework in which features are acquired sequentially for individual samples under budget constraints. The exponential growth in the number of possible feature acquisition paths forces a DFS model to balance fitting specific scenarios against maintaining general performance, even when the feature space is moderate in size. In this paper, we study the structural limitations of existing DFS approaches to achieve an optimal solution. Then, we propose Hyper-DFS, a hypernetwork-based DFS approach that generates feature subset-specific classifier parameters on demand. We show that the use of hypernetworks compared to mask-embedding methods results in a smaller structural complexity bound. We also use a Set Transformer encoding to create a smooth conditioning space for the hypernetwork, so that functionally similar tasks are also geometrically close. In our benchmarks, Hyper-DFS outperforms all state-of-the-art approaches on synthetic and real-life tabular data. It is also competitive or superior across all image datasets tested, and shows substantially stronger zero-shot generalisation to feature subsets never seen during training than existing DFS approaches.},
+  preview={fumanal2026hypernetworks.png},
+  bibtex_show={true}
 }
 
 @inproceedings{jamalifard2026neuro,
@@ -38,7 +44,10 @@
   author={Jamalifard, Mohammadreza and Lei, Yaxiong and Azizinezhad, Parasto and Fumanal-Idocin, Javier and Andreu-Perez, Javier},
   booktitle={2026 IEEE International Conference on Fuzzy Systems (FUZZ-IEEE)},
   year={2026},
-  arxiv={2603.24358}
+  arxiv={2603.24358},
+  abbr={FUZZ-IEEE},
+  preview={jamalifard2026neuro.png},
+  bibtex_show={true}
 }
 
 @article{fumanal2025dynamic,
@@ -47,7 +56,10 @@
   journal={arXiv preprint arXiv:2508.02566},
   year={2025},
   arxiv={2508.02566},
-  abstract={Dynamic feature selection (DFS) offers a compelling alternative to traditional, static feature selection by adapting the selected features to each individual sample. This provides insights into the decision-making process for each case, which makes DFS especially significant in settings where decision transparency is key, i.e., clinical decisions. However, existing DFS methods use opaque models.}
+  abstract={Dynamic feature selection (DFS) offers a compelling alternative to traditional, static feature selection by adapting the selected features to each individual sample. This provides insights into the decision-making process for each case, which makes DFS especially significant in settings where decision transparency is key, i.e., clinical decisions. However, existing DFS methods use opaque models.},
+  abbr={arXiv},
+  preview={fumanal2025dynamic.png},
+  bibtex_show={true}
 }
 
 @article{fumanal2025compact,
@@ -59,7 +71,9 @@
   abbr={arXiv},
   selected={true},
   keywords={ex-fuzzy},
-  abstract={Rule-based models are essential for high-stakes decision-making due to their transparency and interpretability, but their discrete nature creates challenges for optimization and scalability. In this work, we present the Fuzzy Rule-based Reasoner (FRR), a novel gradient-based rule learning system that supports strict user constraints over rule-based complexity while achieving competitive performance. To maximize interpretability, the FRR uses semantically meaningful fuzzy logic partitions, unattainable with existing neuro-fuzzy approaches, and sufficient (single-rule) decision-making, which avoids the combinatorial complexity of additive rule ensembles. Through extensive evaluation across 40 datasets, FRR demonstrates: (1) superior performance to traditional rule-based methods (e.g., 5% average accuracy over RIPPER); (2) comparable accuracy to tree-based models (e.g., CART) using rule bases 90% more compact; and (3) achieves 96% of the accuracy of state-of-the-art additive rule-based models while using only sufficient rules and requiring only 3% of their rule base size.}
+  abstract={Rule-based models are essential for high-stakes decision-making due to their transparency and interpretability, but their discrete nature creates challenges for optimization and scalability. In this work, we present the Fuzzy Rule-based Reasoner (FRR), a novel gradient-based rule learning system that supports strict user constraints over rule-based complexity while achieving competitive performance. To maximize interpretability, the FRR uses semantically meaningful fuzzy logic partitions, unattainable with existing neuro-fuzzy approaches, and sufficient (single-rule) decision-making, which avoids the combinatorial complexity of additive rule ensembles. Through extensive evaluation across 40 datasets, FRR demonstrates: (1) superior performance to traditional rule-based methods (e.g., 5% average accuracy over RIPPER); (2) comparable accuracy to tree-based models (e.g., CART) using rule bases 90% more compact; and (3) achieves 96% of the accuracy of state-of-the-art additive rule-based models while using only sufficient rules and requiring only 3% of their rule base size.},
+  preview={fumanal2025compact.png},
+  bibtex_show={true}
 }
 
 @inproceedings{fernandez2025crisp,
@@ -72,7 +86,10 @@
   pages={1--7},
   doi={10.1109/FUZZ62266.2025.11197604},
   keywords={ex-fuzzy},
-  abstract={Rule-based systems are a very popular form of explainable AI, particularly in the fuzzy community, where fuzzy rules are widely used for control and classification problems.}
+  abstract={Rule-based systems are a very popular form of explainable AI, particularly in the fuzzy community, where fuzzy rules are widely used for control and classification problems.},
+  abbr={FUZZ-IEEE},
+  preview={fernandez2025crisp.png},
+  bibtex_show={true}
 }
 
 @inproceedings{fumanal2025reliable,
@@ -85,7 +102,10 @@
   pages={1--7},
   doi={10.1109/FUZZ62266.2025.11197603},
   keywords={ex-fuzzy},
-  abstract={Classical machine learning classifiers tend to be overconfident can be unreliable outside of the laboratory benchmarks. Properly assessing the reliability of the output of the model per sample is instrumental for real-life scenarios where these systems are deployed.}
+  abstract={Classical machine learning classifiers tend to be overconfident and can be unreliable outside of the laboratory benchmarks. Properly assessing the reliability of the output of the model per sample is instrumental for real-life scenarios where these systems are deployed.},
+  abbr={FUZZ-IEEE},
+  preview={fumanal2025reliable.png},
+  bibtex_show={true}
 }
 
 @inproceedings{armentia2019gravitational,
@@ -94,7 +114,9 @@
   booktitle={New Trends in Aggregation Theory 10},
   pages={172--182},
   year={2019},
-  organization={Springer International Publishing}
+  organization={Springer International Publishing},
+  abbr={AGOP},
+  bibtex_show={true}
 }
 
 @inproceedings{takavc2019distances,
@@ -103,7 +125,9 @@
   booktitle={2019 IEEE International Conference on Fuzzy Systems (FUZZ-IEEE)},
   pages={1--6},
   year={2019},
-  organization={IEEE}
+  organization={IEEE},
+  abbr={FUZZ-IEEE},
+  bibtex_show={true}
 }
 
 
@@ -115,7 +139,9 @@
   volume={68},
   pages={37--45},
   year={2021},
-  publisher={Elsevier}
+  publisher={Elsevier},
+  abbr={Inf. Fusion},
+  bibtex_show={true}
 }
 
 @article{fumanal2021interval,
@@ -126,7 +152,9 @@
   number={7},
   pages={2706--2720},
   year={2021},
-  publisher={IEEE}
+  publisher={IEEE},
+  abbr={IEEE TFS},
+  bibtex_show={true}
 }
 
 @article{papvco2021fusion,
@@ -136,7 +164,9 @@
   volume={71},
   pages={1--10},
   year={2021},
-  publisher={Elsevier}
+  publisher={Elsevier},
+  abbr={Inf. Fusion},
+  bibtex_show={true}
 }
 
 @article{fumanal2021motor,
@@ -147,7 +177,9 @@
   number={8},
   pages={7944--7955},
   year={2021},
-  publisher={IEEE}
+  publisher={IEEE},
+  abbr={IEEE TCYB},
+  bibtex_show={true}
 }
 
 @inproceedings{fumanal2021optimizing,
@@ -156,14 +188,9 @@
   booktitle={2021 IEEE International Conference on Fuzzy Systems (FUZZ-IEEE)},
   pages={1--6},
   year={2021},
-  organization={IEEE}
-}
-
-@article{fumanal2021concept,
-  title={The concept of semantic value in social network analysis: an application to comparative mythology},
-  author={Fumanal-Idocin, Javier and Cord{\'o}n, Oscar and Dimuro, Gra{\c{c}}aliz and Min{\'a}rov{\'a}, Mar{\'\i}a and Bustince, Humberto},
-  journal={arXiv preprint arXiv:2109.08023},
-  year={2021}
+  organization={IEEE},
+  abbr={FUZZ-IEEE},
+  bibtex_show={true}
 }
 
 @inproceedings{fumanal2021gated,
@@ -171,19 +198,9 @@
   author={Fumanal Idocin, Javier and Uriarte Barrag{\'a}n, Juan and Osa Hern{\'a}ndez, Borja de la and Bardozzo, Francesco and Fern{\'a}ndez Fern{\'a}ndez, Francisco Javier and Bustince Sola, Humberto},
   booktitle={WILF’21: The 13th International Workshop on Fuzzy Logic and Applications, Dec. 20--22, 2021, Vietri sul Mare, Italy},
   year={2021},
-  organization={CEUR Workshop Proceedings (CEUR-WS. org)}
-}
-
-@article{uriarte2021enhanced,
-  title={Enhanced local adaptative binarization},
-  author={Uriarte Barrag{\'a}n, Juan},
-  year={2021}
-}
-
-@article{rodriguez2020estudio,
-  title={Estudio del impacto del tama{\~n}o de ventanas en Deep Learning},
-  author={Rodr{\'\i}guez Villar, Izaskun},
-  year={2020}
+  organization={CEUR Workshop Proceedings (CEUR-WS. org)},
+  abbr={WILF},
+  bibtex_show={true}
 }
 
 @inproceedings{fumanal2022combinations,
@@ -193,7 +210,9 @@
   volume={55},
   pages={2107--2114},
   year={2022},
-  organization={IEEE Computer Society}
+  organization={IEEE Computer Society},
+  abbr={HICSS},
+  bibtex_show={true}
 }
 
 @article{wieczynski2022d,
@@ -204,20 +223,9 @@
   number={12},
   pages={5376--5389},
   year={2022},
-  publisher={IEEE}
-}
-
-@article{stupvnanova2022book,
-  title={Book of Abstracts of The Sixteenth International Conference},
-  author={Stup{\v{n}}anov{\'a}, Andrea and Dyba, Martin and Pavliska, Viktor},
-  year={2022},
-  publisher={University of Ostrava}
-}
-
-@article{indurain2021nueva,
-  title={Nueva versi{\'o}n del algoritmo de cl{\'u}ster gravitacional para la detecci{\'o}n de datos at{\'\i}picos},
-  author={Indurain Ibero, Alfonso},
-  year={2021}
+  publisher={IEEE},
+  abbr={IEEE TFS},
+  bibtex_show={true}
 }
 
 @inproceedings{fumanal2022fuzzy,
@@ -226,14 +234,9 @@
   booktitle={International Conference on Information Processing and Management of Uncertainty in Knowledge-Based Systems},
   pages={355--366},
   year={2022},
-  organization={Springer International Publishing Cham}
-}
-
-@article{bardozzo2020adaptive,
-  title={Adaptive binarization based on fuzzy integrals},
-  author={Bardozzo, Francesco and De La Osa, Borja and Horanska, Lubomira and Fumanal-Idocin, Javier and Troiano, Luigi and Tagliaferri, Roberto and Fernandez, Javier and Bustince, Humberto and others},
-  journal={arXiv preprint arXiv:2003.08755},
-  year={2020}
+  organization={Springer International Publishing Cham},
+  abbr={IPMU},
+  bibtex_show={true}
 }
 
 @article{fumanal2022almost,
@@ -243,7 +246,9 @@
   volume={612},
   pages={399--413},
   year={2022},
-  publisher={Elsevier}
+  publisher={Elsevier},
+  abbr={Inf. Sci.},
+  bibtex_show={true}
 }
 
 @inproceedings{fumanal2021analisis,
@@ -251,7 +256,9 @@
   author={Fumanal Idocin, Javier and Cord{\'o}n, {\'O}scar and Alonso Betanzos, Amparo and Bustince Sola, Humberto and Fern{\'a}ndez Fern{\'a}ndez, Francisco Javier},
   booktitle={Enrique Alba...[et al.](Eds.): XIX Conferencia de la Asociaci{\'o}n Espa{\~n}ola para la Inteligencia Artificial CAEPIA 20/21. Universidad de M{\'a}laga, 2021. 978-84-09-30514-8},
   year={2021},
-  organization={Universidad de M{\'a}laga}
+  organization={Universidad de M{\'a}laga},
+  abbr={CAEPIA},
+  bibtex_show={true}
 }
 
 @inproceedings{fumanal2021optimizando,
@@ -259,7 +266,9 @@
   author={Fumanal Idocin, Javier and Vidaurre, Carmen and G{\'o}mez Fern{\'a}ndez, Marisol and Ur{\'\i}o Larrea, Asier and Pereira Dimuro, Gra{\c{c}}aliz and Bustince Sola, Humberto},
   booktitle={Enrique Alba...[et al.](Eds.): XIX Conferencia de la Asociaci{\'o}n Espa{\~n}ola para la Inteligencia Artificial CAEPIA 20/21. Universidad de M{\'a}laga, 2021.},
   year={2021},
-  organization={Universidad de M{\'a}laga}
+  organization={Universidad de M{\'a}laga},
+  abbr={CAEPIA},
+  bibtex_show={true}
 }
 
 @article{fumanal2023krypteia,
@@ -269,7 +278,9 @@
   volume={90},
   pages={283--297},
   year={2023},
-  publisher={Elsevier}
+  publisher={Elsevier},
+  abbr={Inf. Fusion},
+  bibtex_show={true}
 }
 
 @inproceedings{castillo2021clusterig,
@@ -277,7 +288,9 @@
   author={Castillo L{\'o}pez, Aitor and Fumanal Idocin, Javier and Fern{\'a}ndez Fern{\'a}ndez, Francisco Javier and Bustince Sola, Humberto},
   booktitle={Enrique Alba...[et al.](Eds.): XIX Conferencia de la Asociaci{\'o}n Espa{\~n}ola para la Inteligencia Artificial CAEPIA 20/21. Universidad de M{\'a}laga, 2021.},
   year={2021},
-  organization={Universidad de M{\'a}laga}
+  organization={Universidad de M{\'a}laga},
+  abbr={CAEPIA},
+  bibtex_show={true}
 }
 
 @article{fumanal2022generalization,
@@ -287,7 +300,9 @@
   volume={451},
   pages={320--341},
   year={2022},
-  publisher={North-Holland}
+  publisher={North-Holland},
+  abbr={FSS},
+  bibtex_show={true}
 }
 
 @article{FUMANALIDOCIN2024128048,
@@ -303,7 +318,9 @@ preview={fuzzy.png},
 code={https://github.com/Fuminides/ex-fuzzy},
 html={https://www.sciencedirect.com/science/article/pii/S0925231224008191},
 keywords = {Fuzzy logic, Python software, Fuzzy rules classifier, Explainable AI},
-abstract = {Understanding the decisions taken by machine learning systems is instrumental in their deployment in real-world systems, as it enables responsible decision-making, fosters trust, and facilitates debugging and improvement. The research field devoted to studying the techniques that explain and illustrate those decisions is called explainable AI. Fuzzy logic, with its interpretable fuzzy rule-based inference, has emerged as a popular tool for Explainable AI because of these interpretable classifiers. However, current fuzzy logic libraries provide limited inference capabilities and integration to machine learning or are only available in the Java or R language, which makes their integration with the standard machine libraries in Python challenging. This paper describes a software library that contains a Python implementation to perform fuzzy inference using different kinds of fuzzy sets, with a special focus on result visualization. This library follows the scikit-learn programming interface, enabling researchers to utilize it with minimum fuzzy logic background seamlessly. This toolkit unveils novel tools for programming fuzzy systems that are learnable using machine learning methods, leading to data-powered systems that maintain full transparency and accountability, accessible to virtually anyone without specialized AI training. The interpretability of these systems makes them highly valuable in industries like healthcare, law, and security.}
+abstract = {Understanding the decisions taken by machine learning systems is instrumental in their deployment in real-world systems, as it enables responsible decision-making, fosters trust, and facilitates debugging and improvement. The research field devoted to studying the techniques that explain and illustrate those decisions is called explainable AI. Fuzzy logic, with its interpretable fuzzy rule-based inference, has emerged as a popular tool for Explainable AI because of these interpretable classifiers. However, current fuzzy logic libraries provide limited inference capabilities and integration to machine learning or are only available in the Java or R language, which makes their integration with the standard machine libraries in Python challenging. This paper describes a software library that contains a Python implementation to perform fuzzy inference using different kinds of fuzzy sets, with a special focus on result visualization. This library follows the scikit-learn programming interface, enabling researchers to utilize it with minimum fuzzy logic background seamlessly. This toolkit unveils novel tools for programming fuzzy systems that are learnable using machine learning methods, leading to data-powered systems that maintain full transparency and accountability, accessible to virtually anyone without specialized AI training. The interpretability of these systems makes them highly valuable in industries like healthcare, law, and security.},
+abbr={Neurocomputing},
+bibtex_show={true}
 }
 
 @article{fumanal2023supervised,
@@ -311,7 +328,9 @@ abstract = {Understanding the decisions taken by machine learning systems is ins
   author={Fumanal-Idocin, Javier and Vidaurre, Carmen and Fern{\'a}ndez, Javier and G{\'o}mez, Marisol and Andreu-Perez, Javier and Prashad, Mukesh and Bustince, Humberto},
   journal={Pattern Recognition},
   year={2023},
-  publisher={Elsevier}
+  publisher={Elsevier},
+  abbr={Pattern Recog.},
+  bibtex_show={true}
 }
 
 @article{fumanal2023quantifying,
@@ -321,23 +340,18 @@ abstract = {Understanding the decisions taken by machine learning systems is ins
   year={2023},
   publisher={IEEE},
   arxiv={2109.08023},
-  preview={network.png}
-}
-
-@article{bardozzo2021delli,
-  title={delli Priscoli M., Troiano L., Tagliaferri R., Fernandez J., Bustince H},
-  author={Bardozzo, F and De La Osa, B and Horansk{\'a}, L and Fumanal-Idocin, J},
-  journal={Sugeno integral generalization applied to improve adaptive image binarization, Inf. Fusion},
-  volume={68},
-  pages={37--45},
-  year={2021}
+  preview={network.png},
+  abbr={IEEE TCYB},
+  bibtex_show={true}
 }
 
 @phdthesis{fumanal2023mejoras,
   title={Mejoras a la capacidad de generalizaci{\'o}n de la inteligencia artificial},
   author={Fumanal-Idocin, Javier},
   year={2023},
-  school={Universidad P{\'u}blica de Navarra}
+  school={Universidad P{\'u}blica de Navarra},
+  abbr={PhD Thesis},
+  bibtex_show={true}
 }
 
 @article{fumanal2023artxai,
@@ -354,7 +368,9 @@ abstract = {Understanding the decisions taken by machine learning systems is ins
   arxiv={2308.15284},
   abbr={IEEE TFS},
   selected={true},
-  abstract={Automatic art analysis employs different image processing techniques to classify and categorize works of art. When working with artistic images, we need to take into account further considerations compared to classical image processing. This is because such artistic paintings change drastically depending on the author, the scene depicted, and their artistic style. This can result in features that perform very well in a given task but do not grasp the whole of the visual and symbolic information contained in a painting. In this paper, we show how the features obtained from different tasks in artistic image classification are suitable to solve other ones of similar nature. We present different methods to improve the generalization capabilities and performance of artistic classification systems. Furthermore, we propose an explainable artificial intelligence method to map known visual traits of an image with the features used by the deep learning model considering fuzzy rules. These rules show the patterns and variables that are relevant to solve each task and how effective is each of the patterns found. Our results show that our proposed context-aware features can achieve up to 6% and 26% more accurate results than other context- and non-context-aware solutions, respectively, depending on the specific task. We also show that some of the features used by these models can be more clearly correlated to visual traits in the original image than others.}
+  abstract={Automatic art analysis employs different image processing techniques to classify and categorize works of art. When working with artistic images, we need to take into account further considerations compared to classical image processing. This is because such artistic paintings change drastically depending on the author, the scene depicted, and their artistic style. This can result in features that perform very well in a given task but do not grasp the whole of the visual and symbolic information contained in a painting. In this paper, we show how the features obtained from different tasks in artistic image classification are suitable to solve other ones of similar nature. We present different methods to improve the generalization capabilities and performance of artistic classification systems. Furthermore, we propose an explainable artificial intelligence method to map known visual traits of an image with the features used by the deep learning model considering fuzzy rules. These rules show the patterns and variables that are relevant to solve each task and how effective is each of the patterns found. Our results show that our proposed context-aware features can achieve up to 6% and 26% more accurate results than other context- and non-context-aware solutions, respectively, depending on the specific task. We also show that some of the features used by these models can be more clearly correlated to visual traits in the original image than others.},
+  preview={fumanal2023artxai.png},
+  bibtex_show={true}
 }
 
 @inproceedings{fumanal2023stability,
@@ -363,7 +379,9 @@ abstract = {Understanding the decisions taken by machine learning systems is ins
   booktitle={2023 IEEE International Conference on Fuzzy Systems (FUZZ)},
   pages={1--6},
   year={2023},
-  organization={IEEE}
+  organization={IEEE},
+  abbr={FUZZ-IEEE},
+  bibtex_show={true}
 }
 
 @article{fumanal2020community,
@@ -375,7 +393,9 @@ abstract = {Understanding the decisions taken by machine learning systems is ins
   year={2020},
   publisher={Elsevier},
   preview={borgia.png},
-  arxiv={2007.02641}
+  arxiv={2007.02641},
+  abbr={FGCS},
+  bibtex_show={true}
 }
 
 @inproceedings{fumanal2024interpreting,
@@ -385,7 +405,9 @@ abstract = {Understanding the decisions taken by machine learning systems is ins
   pages={1--7},
   year={2024},
   organization={IEEE},
-  keywords={ex-fuzzy}
+  keywords={ex-fuzzy},
+  abbr={FUZZ-IEEE},
+  bibtex_show={true}
 }
 
 @inproceedings{fumanal2025fast,
@@ -394,7 +416,10 @@ abstract = {Understanding the decisions taken by machine learning systems is ins
   booktitle={2026 IEEE International Conference on Fuzzy Systems (FUZZ-IEEE)},
   year={2026},
   arxiv={2512.11616},
-  keywords={ex-fuzzy}
+  keywords={ex-fuzzy},
+  abbr={FUZZ-IEEE},
+  preview={fumanal2025fast.png},
+  bibtex_show={true}
 }
 
 @article{gonzalez2026efficient,
@@ -404,5 +429,7 @@ abstract = {Understanding the decisions taken by machine learning systems is ins
   volume={125},
   pages={103452},
   year={2026},
-  publisher={Elsevier}
+  publisher={Elsevier},
+  abbr={Inf. Fusion},
+  bibtex_show={true}
 }

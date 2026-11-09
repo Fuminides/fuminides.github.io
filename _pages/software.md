@@ -9,7 +9,30 @@ nav_order: 4
 
 ## Ex-Fuzzy
 
-**Ex-Fuzzy** is a modern Python library for building explainable rule-based models using fuzzy logic. It provides comprehensive capabilities for model visualization and validation. It is also designed with ease of use in mind, so that users shall find here a scikit learn compatible interface, with no previous fuzzy logic knowledge required to run the models.
+<p>
+  <a href="https://github.com/Fuminides/ex-fuzzy"><img src="https://img.shields.io/github/stars/Fuminides/ex-fuzzy?style=flat&logo=github" alt="GitHub stars"></a>
+  <a href="https://pypi.org/project/ex-fuzzy/"><img src="https://img.shields.io/pypi/v/ex-fuzzy" alt="PyPI version"></a>
+  <a href="https://pepy.tech/projects/ex-fuzzy"><img src="https://img.shields.io/pepy/dt/ex-fuzzy" alt="PyPI downloads"></a>
+</p>
+
+<div class="row">
+  <div class="col-md-7">
+    <p><strong>Ex-Fuzzy</strong> is a modern Python library for building explainable rule-based models using fuzzy logic. It provides comprehensive capabilities for model visualization and validation. It is also designed with ease of use in mind, so that users shall find here a scikit learn compatible interface, with no previous fuzzy logic knowledge required to run the models.</p>
+  </div>
+  <div class="col-md-5">
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/publication_preview/fuzzy.png" alt="Fuzzy sets Low, Medium and High for the variable sepal length, plotted with Ex-Fuzzy" loading="lazy">
+    <p class="text-muted small mt-1">The fuzzy sets Low, Medium and High that Ex-Fuzzy uses for one variable of the Iris dataset.</p>
+  </div>
+</div>
+
+<div class="row align-items-center mt-3 mb-4 mx-0 p-3 rounded" style="background: var(--global-code-bg-color);">
+  <div class="col-sm-4 mb-2 mb-sm-0 px-0 pr-sm-3">
+    <a href="https://fuminides.github.io/exfuzzy-lab/"><img class="img-fluid rounded z-depth-1" src="/assets/img/demos/exfuzzy-lab.png" alt="Ex-Fuzzy Lab workspace" loading="lazy"></a>
+  </div>
+  <div class="col-sm-8 px-0">
+    <strong>Try it in your browser.</strong> <a href="https://fuminides.github.io/exfuzzy-lab/">Ex-Fuzzy Lab</a> is a visual workspace where you can upload your own dataset, run real Ex-Fuzzy experiments and explore the rules behind the results, with nothing to install.
+  </div>
+</div>
 
 ### Key Features
 
@@ -145,4 +168,4 @@ If you use Ex-Fuzzy in your research, please cite:
 
 Ex-Fuzzy is open source under the AGPL v3 license. Contributions, bug reports, and feature requests are welcome on [GitHub](https://github.com/Fuminides/ex-fuzzy/issues).
 
-If you are a BSc/MSc student looking for thesis projects, I am actively supervising work on extending Ex-Fuzzy functionalities and doing more research with the tool. Feel free to [contact me](mailto:j.fumanal-idocin@essex.ac.uk).
+If you are a BSc/MSc student looking for thesis projects, I am actively supervising work on extending Ex-Fuzzy functionalities and doing more research with the tool. There are more [thesis topics](/#thesis-topics) on the home page. Feel free to [contact me](mailto:j.fumanal-idocin@essex.ac.uk).

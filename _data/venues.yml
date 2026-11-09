@@ -16,3 +16,68 @@
 "IJCLR":
   url: https://ijclr.github.io/
   color: "#2e7d32"
+
+# IEEE venues share #00629b
+"IEEE TCYB":
+  url: https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6221036
+  color: "#00629b"
+
+"FUZZ-IEEE":
+  url: https://ieeexplore.ieee.org/xpl/conhome/1000300/all-proceedings
+  color: "#00629b"
+
+# Elsevier journals share #e9711c
+"Inf. Fusion":
+  url: https://www.sciencedirect.com/journal/information-fusion
+  color: "#e9711c"
+
+"Inf. Sci.":
+  url: https://www.sciencedirect.com/journal/information-sciences
+  color: "#e9711c"
+
+"FSS":
+  url: https://www.sciencedirect.com/journal/fuzzy-sets-and-systems
+  color: "#e9711c"
+
+"FGCS":
+  url: https://www.sciencedirect.com/journal/future-generation-computer-systems
+  color: "#e9711c"
+
+"Neurocomputing":
+  url: https://www.sciencedirect.com/journal/neurocomputing
+  color: "#e9711c"
+
+"Pattern Recog.":
+  url: https://www.sciencedirect.com/journal/pattern-recognition
+  color: "#e9711c"
+
+# Machine learning and reasoning conferences share #2e7d32 (like IJCLR)
+"NeurIPS":
+  url: https://neurips.cc/
+  color: "#2e7d32"
+
+# Other conferences and workshops share #6a4c93
+"AGOP":
+  url: https://doi.org/10.1007/978-3-030-19494-9
+  color: "#6a4c93"
+
+"IPMU":
+  url: https://link.springer.com/conference/ipmu
+  color: "#6a4c93"
+
+"WILF":
+  url: https://ceur-ws.org/Vol-3074/
+  color: "#6a4c93"
+
+"HICSS":
+  url: https://hicss.hawaii.edu/
+  color: "#6a4c93"
+
+"CAEPIA":
+  url: https://caepia20-21.uma.es/
+  color: "#6a4c93"
+
+# Theses share #5f6368
+"PhD Thesis":
+  url: https://academica-e.unavarra.es/
+  color: "#5f6368"

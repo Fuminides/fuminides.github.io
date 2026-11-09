@@ -1,97 +1,110 @@
 - title: General Information
   type: map
   contents:
-    - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
+    - name: Name
+      value: Javier Fumanal Idocin
+    - name: Position
+      value: YUFE4Postdocs Research Fellow (Marie Skłodowska-Curie co-funded), University of Essex
+    - name: Location
+      value: Colchester, United Kingdom
+    - name: Email
+      value: <a href="mailto:j.fumanal-idocin@essex.ac.uk">j.fumanal-idocin@essex.ac.uk</a>
     - name: Languages
-      value: English, German
+      value: Spanish (native), English (full professional)
+
+- title: Research Profile
+  contents: >
+    Marie Skłodowska-Curie co-funded research fellow and PhD in Artificial Intelligence. I develop
+    interpretable, uncertainty-aware machine learning methods and evaluate when models can make
+    reliable predictions. I lead projects from research question and experiments to publications and
+    maintained open-source software.
+
+- title: Research Experience
+  type: time_table
+  contents:
+    - title: YUFE4Postdocs Research Fellow
+      institution: University of Essex, UK
+      year: 2024 - now
+      description:
+        - Lead an independent EU-funded programme on interpretable models and reliable classification in resource-constrained settings.
+        - Developed HyperDFS for dynamic feature selection, accepted as a NeurIPS 2026 poster.
+        - Study uncertainty-aware classification with conformal prediction and interval-valued models, including when a system should abstain or request more information.
+        - Created and maintain <a href="/software/">Ex-Fuzzy</a>, an open-source Python framework for explainable and neurosymbolic learning used by independent research groups.
+    - title: Visiting Researcher
+      institution: University of Essex, UK
+      year: 2022 - 2023
+      description:
+        - Built the first version of Ex-Fuzzy with researchers at Essex and Navarre, and analysed deep image representations in work published in IEEE Transactions on Fuzzy Systems.
+    - title: Junior Researcher
+      institution: Public University of Navarre, Spain
+      year: 2018 - 2019
+      description:
+        - Developed and evaluated clustering methods for tabular data, published in Information Sciences.
+    - title: AI Intern
+      institution: Iternova, Spain
+      year: 2016
+      description:
+        - Built the company's first neural-network-based NLP system, which let clients access its services through a Telegram chatbot.
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: PhD in Artificial Intelligence
+      institution: Public University of Navarre, Spain
+      year: 2019 - 2023
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
+        - Research on brain-computer interface classification and deep image representations, with eight peer-reviewed journal publications.
+        - Supervised by Prof. Humberto Bustince and Prof. Óscar Cordón.
+    - title: MSc in Data Science and Computer Architecture
+      institution: Universidad de Granada, Spain
+      year: 2017 - 2018
       description:
-        - Description 1.
-        - Description 2.
+        - "Dissertation: Semantic Segmentation of Financial Time Series."
+    - title: BSc in Computer Science
+      institution: Universidad de Zaragoza, Spain
+      year: 2013 - 2017
+      description:
+        - "Dissertation: Analysis of Caenorhabditis elegans Neural Dynamics."
 
-- title: Experience
+- title: Grants
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
-      description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
-      description:
-        - Description 1.
-        - Description 2.
-
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
-      description:
-
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
-
-- title: Open Source Projects
-  type: time_table
-  contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
-
-- title: Honors and Awards
-  type: time_table
-  contents:
-    - year: 1921
+    - year: 2023
       items:
-        - Nobel Prize in Physics
-        - Matteucci Medal
-    - year: 2029
+        - Oracle Doctoral Support Grant
+        - IEEE CIS Competitive Travel Grant
+    - year: 2022
       items:
-        - Max Planck Medal
+        - EUSFLAT Student Grant
 
-- title: Academic Interests
-  type: nested_list
-  contents:
-    - title: Topic 1.
-      items:
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
-      items:
-        - Description 1.
-        - Description 2.
-
-- title: Other Interests
+- title: Teaching and Supervision
   type: list
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - Lab instructor in optimisation with metaheuristics, Python, and numerical methods at the Public University of Navarre (2021-2023).
+    - Supervised six BSc theses in Computer Science and Data Science (2019-2023).
+    - 'Supervised theses include: Juan Uriarte Barragán, "Enhanced local adaptative binarization" (2021); Alfonso Indurain Ibero, "Nueva versión del algoritmo de clúster gravitacional para la detección de datos atípicos" (2021); Izaskun Rodríguez Villar, "Estudio del impacto del tamaño de ventanas en Deep Learning" (2020).'
+
+- title: Editorial and Scientific Service
+  type: list
+  contents:
+    - Managing Editor, Journal of Ambient Intelligence and Humanized Computing (2025-now).
+    - Reviewer for AAAI, UAI, IEEE FUZZ, IEEE Transactions on Fuzzy Systems, IEEE Transactions on Cybernetics, Neurocomputing, and other journals.
+
+- title: Methods and Tools
+  type: map
+  contents:
+    - name: Methods
+      value: Interpretable and neurosymbolic learning; dynamic feature selection; uncertainty quantification and conformal prediction; experimental design and model evaluation.
+    - name: Tools
+      value: Python (PyTorch, NumPy, pandas, scikit-learn), R, Git, and research software.
+
+- title: Selected Publications
+  type: list
+  contents:
+    - 'J. Fumanal-Idocin, R. Fernandez-Peralta, and J. Andreu-Perez, "Hypernetworks for Dynamic Feature Selection (HyperDFS)", NeurIPS 2026 (poster).'
+    - 'J. Fumanal-Idocin and J. Andreu-Perez, "Reliable Classification with Conformal Learning and Interval-Type 2 Fuzzy Sets", IEEE International Conference on Fuzzy Systems, 2025.'
+    - 'J. Fumanal-Idocin and J. Andreu-Perez, "Ex-Fuzzy: A library for symbolic explainable AI through fuzzy logic programming", Neurocomputing, 2024.'
+    - 'J. Fumanal-Idocin, J. Andreu-Perez, O. Cordón, H. Hagras, and H. Bustince, "ARTxAI: Explainable artificial intelligence curates deep representation learning for artistic images using fuzzy techniques", IEEE Transactions on Fuzzy Systems, 2023.'
+    - 'J. Fumanal-Idocin, O. Cordón, G. P. Dimuro, A.-F. R. López-de Hierro, and H. Bustince, "Quantifying external information in social network analysis", IEEE Transactions on Cybernetics, 2023.'
+    - 'J. Fumanal-Idocin et al., "A generalization of the Sugeno integral to aggregate interval-valued data: An application to brain computer interface and social network analysis", Fuzzy Sets and Systems, 2022.'
+    - The full list is on the <a href="/publications/">publications</a> page.
