@@ -15,38 +15,67 @@ layout: default
   </header>
 
   <article>
-    {% if page.profile %}
-      <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
-        {% if page.profile.image %}
-          {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
-          {% if page.profile.image_circular %}
-            {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
-          {% else %}
-            {% assign profile_image_class = 'img-fluid z-depth-1
-      rounded' %}
-          {% endif %}
-          {% capture sizes %}(min-width: {{site.max_width}}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px)
-      30vw, 95vw"{% endcapture %}
-          {%
-            include figure.liquid path = profile_image_path class = profile_image_class sizes = sizes alt = page.profile.image
-            cache_bust = true
-          %}
-        {% endif %}
-        {% if page.profile.more_info %}
-          <div class="more-info">{{ page.profile.more_info }}</div>
+    <div class="row">
+      <div class="col-md-8 order-2 order-md-1">
+        <div class="clearfix">{{ content }}</div>
+
+        <!-- News, below the text on narrow screens -->
+        {% if page.news and site.announcements.enabled %}
+          <div class="d-md-none">
+            <h2>
+              <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
+            </h2>
+            {% include news.liquid limit=true %}
+          </div>
         {% endif %}
       </div>
-    {% endif %}
 
-    <div class="clearfix">{{ content }}</div>
+      <div class="col-md-4 order-1 order-md-2">
+        {% if page.profile %}
+          <div class="profile profile-side">
+            {% if page.profile.image %}
+              {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
+              {% if page.profile.image_circular %}
+                {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
+              {% else %}
+                {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
+              {% endif %}
+              {% capture sizes %}(min-width: 768px) {{ site.max_width | minus: 30 | times: 0.33 }}px, 95vw{% endcapture %}
+              {%
+                include figure.liquid path = profile_image_path class = profile_image_class sizes = sizes alt = page.profile.image
+                cache_bust = true
+              %}
+            {% endif %}
+            {% if page.profile.more_info %}
+              <div class="more-info">{{ page.profile.more_info }}</div>
+            {% endif %}
+          </div>
+        {% endif %}
 
-    <!-- News -->
-    {% if page.news and site.announcements.enabled %}
-      <h2>
-        <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
-      </h2>
-      {% include news.liquid limit=true %}
-    {% endif %}
+        <!-- News, beside the text on wide screens -->
+        {% if page.news and site.announcements.enabled and site.news != blank %}
+          <div class="news-side d-none d-md-block">
+            <h2>
+              <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
+            </h2>
+            {% assign news = site.news | reverse %}
+            {% for item in news limit: site.announcements.limit %}
+              <div class="news-side-item">
+                <div class="news-side-date">{{ item.date | date: '%b %d, %Y' }}</div>
+                <div class="news-side-text">
+                  {% if item.inline %}
+                    {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
+                  {% else %}
+                    <a class="news-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
+                  {% endif %}
+                </div>
+              </div>
+            {% endfor %}
+            <a class="news-side-all" href="{{ '/news/' | relative_url }}">all news &rarr;</a>
+          </div>
+        {% endif %}
+      </div>
+    </div>
 
     <!-- Latest posts -->
     {% if page.latest_posts %}
