@@ -2,7 +2,7 @@
 layout: page
 permalink: /vibe-projects/
 title: vibe projects
-description: Things I vibe code for myself, mostly skills and tools for LLM coding agents. They are side projects, not research software.
+description: Things I vibe code for myself, mostly skills and tools for LLM coding agents.
 nav: true
 nav_order: 5
 ---
