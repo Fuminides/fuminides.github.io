@@ -11,7 +11,7 @@ nav_order: 5
 
 <div class="row mt-4">
   <div class="col-sm-4 mb-3">
-    <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/vibe/cute-claude-cat.gif' | relative_url }}" alt="The cat look of cute-claude: a ginger cat sits beside the spinner while Claude edits a file" loading="lazy">
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/vibe/cute-claude-cat.gif" alt="The cat look of cute-claude: a ginger cat sits beside the spinner while Claude edits a file" loading="lazy">
   </div>
   <div class="col-sm-8">
     <h3>cute-claude</h3>
@@ -23,7 +23,7 @@ nav_order: 5
 
 <div class="row mt-4">
   <div class="col-sm-4 mb-3">
-    <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/vibe/visor.png' | relative_url }}" alt="The Visor window showing a bar chart, with the history of figures in the sidebar" loading="lazy">
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/vibe/visor.png" alt="The Visor window showing a bar chart, with the history of figures in the sidebar" loading="lazy">
   </div>
   <div class="col-sm-8">
     <h3>Visor</h3>
@@ -38,7 +38,7 @@ nav_order: 5
 
 <div class="row mt-4">
   <div class="col-sm-4 mb-3">
-    <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/vibe/literature-wiki-home.png' | relative_url }}" alt="Home page of a literature wiki built with the skill" loading="lazy">
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/vibe/literature-wiki-home.png" alt="Home page of a literature wiki built with the skill" loading="lazy">
   </div>
   <div class="col-sm-8">
     <h3>Literature Wiki</h3>
