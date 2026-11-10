@@ -34,6 +34,15 @@ nav_order: 4
   </div>
 </div>
 
+<div class="row align-items-center mt-3 mb-4 mx-0 p-3 rounded" style="background: var(--global-code-bg-color);">
+  <div class="col-sm-4 mb-2 mb-sm-0 px-0 pr-sm-3">
+    <a href="https://fuminides.github.io/exfuzzy-atlas/"><img class="img-fluid rounded z-depth-1" src="/assets/img/demos/exfuzzy-atlas.png" alt="ExFuzzy Atlas landing page" loading="lazy"></a>
+  </div>
+  <div class="col-sm-8 px-0">
+    <strong>See it on real data.</strong> <a href="https://fuminides.github.io/exfuzzy-atlas/">ExFuzzy Atlas</a> shows Ex-Fuzzy models on public data: NO<sub>2</sub> air quality in Germany, dissolved oxygen in the Northumberland and Tyne rivers, and yellow-taxi demand in New York. You can read each rule, see where on the map it decides, and compare the models with simple baselines. The source is on <a href="https://github.com/Fuminides/exfuzzy-atlas">GitHub</a>.
+  </div>
+</div>
+
 ### Key Features
 
 - **Explainable AI**: Create interpretable models using fuzzy association rules that humans can understand and verify
