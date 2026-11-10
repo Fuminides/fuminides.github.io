@@ -32,7 +32,7 @@ and [Prof. Óscar Cordón](https://scholar.google.com/citations?user=oUmv8xgAAAA
 <div class="row mt-3">
   <div class="col-md-4 mb-3">
     <a href="https://fuminides.github.io/exfuzzy-atlas/"><img class="img-fluid rounded z-depth-1" src="/assets/img/demos/exfuzzy-atlas.png" alt="ExFuzzy Atlas: fuzzy rules that predict air quality in Germany, drawn on the map" loading="lazy"></a>
-    <p class="mt-2 mb-0"><a href="https://fuminides.github.io/exfuzzy-atlas/"><strong>ExFuzzy Atlas</strong></a>: fuzzy rules learned with Ex-Fuzzy on air quality, river water and New York taxi data, and where on the map each rule decides.</p>
+    <p class="mt-2 mb-0"><a href="https://fuminides.github.io/exfuzzy-atlas/"><strong>ExFuzzy Atlas</strong></a>: Ex-Fuzzy rules on real air, river and taxi data, and where on the map each one decides.</p>
   </div>
   <div class="col-md-4 mb-3">
     <a href="https://fuminides.github.io/exfuzzy-lab/"><img class="img-fluid rounded z-depth-1" src="/assets/img/demos/exfuzzy-lab.png" alt="Ex-Fuzzy Lab: the workspace where you load a dataset and learn fuzzy rules" loading="lazy"></a>
