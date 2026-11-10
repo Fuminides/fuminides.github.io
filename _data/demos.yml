@@ -1,0 +1,19 @@
+# Browser demos shown on the home page ("Try it in your browser").
+# Rendered by _includes/demos.liquid: a left column on wide screens, in the text after the intro otherwise.
+- title: ExFuzzy Atlas
+  url: https://fuminides.github.io/exfuzzy-atlas/
+  img: /assets/img/demos/exfuzzy-atlas.png
+  alt: "ExFuzzy Atlas: fuzzy rules that predict air quality in Germany, drawn on the map"
+  caption: Ex-Fuzzy rules on real air, river and taxi data, and where on the map each one decides.
+
+- title: Ex-Fuzzy Lab
+  url: https://fuminides.github.io/exfuzzy-lab/
+  img: /assets/img/demos/exfuzzy-lab.png
+  alt: "Ex-Fuzzy Lab: the workspace where you load a dataset and learn fuzzy rules"
+  caption: upload a dataset, learn fuzzy rules with Ex-Fuzzy and explore them, with nothing to install.
+
+- title: What does the model think it knows?
+  url: https://fuminides.github.io/llm-belief-jepa/
+  img: /assets/img/demos/belief-dungeon.png
+  alt: A Qwen model playing the text dungeon, with the map and the probability of each move
+  caption: watch LLMs play a clue game and a text dungeon, turn by turn, against the Bayesian answer.

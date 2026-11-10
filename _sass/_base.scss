@@ -1081,37 +1081,3 @@ nav[data-toggle="toc"] {
 #toc-sidebar {
   z-index: 1;
 }
-
-// Home page: photo and news in a side column
-
-.profile.profile-side {
-  width: 100%;
-  margin: 0 0 1rem 0;
-}
-
-.news-side {
-  h2 {
-    font-size: 1.5rem;
-    margin-top: 0.5rem;
-  }
-
-  .news-side-item {
-    padding: 0.6rem 0;
-    border-top: 1px solid var(--global-divider-color);
-    font-size: 0.85rem;
-    line-height: 1.45;
-  }
-
-  .news-side-date {
-    font-weight: bold;
-    font-size: 0.75rem;
-    color: var(--global-text-color-light);
-    margin-bottom: 0.15rem;
-  }
-
-  .news-side-all {
-    display: inline-block;
-    margin-top: 0.4rem;
-    font-size: 0.85rem;
-  }
-}

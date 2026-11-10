@@ -1,0 +1,23 @@
+{% comment %}
+  The "Try it in your browser" demos from _data/demos.yml.
+  include.layout = 'side' (stacked cards for the side column) or 'flow' (image beside text, in the page flow).
+{% endcomment %}
+{% if include.layout == 'side' %}
+  <h2 class="side-heading">Try it in your browser</h2>
+{% else %}
+  <h4>Try it in your browser</h4>
+{% endif %}
+<div class="demo-list demo-list-{{ include.layout }}">
+  {% for demo in site.data.demos %}
+    <div class="demo">
+      <a class="demo-thumb" href="{{ demo.url }}">
+        <img class="img-fluid rounded z-depth-1" src="{{ demo.img | relative_url }}" alt="{{ demo.alt }}" loading="lazy">
+      </a>
+      <p class="demo-text">
+        <a href="{{ demo.url }}"
+          ><strong>{{ demo.title }}</strong></a
+        >: {{ demo.caption }}
+      </p>
+    </div>
+  {% endfor %}
+</div>

@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<div class="post">
+<div class="post home">
   <header class="post-header">
     <h1 class="post-title">
       {% if site.title == 'blank' %}
@@ -15,9 +15,25 @@ layout: default
   </header>
 
   <article>
+    {% comment %}
+      Three columns on wide screens: demos | text | photo and news.
+      The text column is split at the "<!-- demos -->" marker in about.md so that, below the xl breakpoint,
+      the demos sit in the flow after the intro instead of in the left column.
+    {% endcomment %}
+    {% assign parts = content | split: '<!-- demos -->' %}
     <div class="row">
-      <div class="col-md-8 order-2 order-md-1">
-        <div class="clearfix">{{ content }}</div>
+      <!-- Demos, left column on wide screens -->
+      <div class="col-xl-3 d-none d-xl-block order-xl-1">
+        <div class="demos demos-side">{% include demos.liquid layout='side' %}</div>
+      </div>
+
+      <div class="col-md-8 col-xl-6 order-2 order-md-1 order-xl-2">
+        <div class="clearfix">
+          {{ parts[0] }}
+          <!-- Demos, in the flow below the xl breakpoint -->
+          <div class="demos demos-flow d-xl-none">{% include demos.liquid layout='flow' %}</div>
+          {{ parts[1] }}
+        </div>
 
         <!-- News, below the text on narrow screens -->
         {% if page.news and site.announcements.enabled %}
@@ -30,7 +46,7 @@ layout: default
         {% endif %}
       </div>
 
-      <div class="col-md-4 order-1 order-md-2">
+      <div class="col-md-4 col-xl-3 order-1 order-md-2 order-xl-3">
         {% if page.profile %}
           <div class="profile profile-side">
             {% if page.profile.image %}
@@ -55,7 +71,7 @@ layout: default
         <!-- News, beside the text on wide screens -->
         {% if page.news and site.announcements.enabled and site.news != blank %}
           <div class="news-side d-none d-md-block">
-            <h2>
+            <h2 class="side-heading">
               <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
             </h2>
             {% assign news = site.news | reverse %}

@@ -1,0 +1,265 @@
+/*******************************************************************************
+ * Site overrides on top of al-folio: typography rhythm, navbar, page headers,
+ * cards, and the three-column home page. Imported last from assets/css/main.scss.
+ ******************************************************************************/
+
+// Typography rhythm
+
+.post {
+  p,
+  li {
+    line-height: 1.65;
+  }
+
+  li + li {
+    margin-top: 0.35rem;
+  }
+
+  h2,
+  h3,
+  h4 {
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    margin-top: 2.25rem;
+    margin-bottom: 0.9rem;
+  }
+
+  h4 {
+    font-size: 1.35rem;
+  }
+
+  article > h2 {
+    margin-top: 3rem;
+  }
+}
+
+a {
+  text-underline-offset: 0.15em;
+  text-decoration-thickness: 1px;
+}
+
+// Page header: the same masthead on every page
+
+.post-header {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--global-divider-color);
+
+  .post-title {
+    letter-spacing: -0.02em;
+    margin-bottom: 0.25rem;
+  }
+
+  .post-description,
+  .desc {
+    color: var(--global-text-color-light);
+    font-size: 1rem;
+    margin-bottom: 0;
+  }
+
+  .desc:empty {
+    display: none;
+  }
+}
+
+// Navbar: a purple bar under the current page
+
+.navbar.navbar-light .navbar-nav .nav-item .nav-link {
+  position: relative;
+}
+
+@media (min-width: 576px) {
+  .navbar.navbar-light .navbar-nav .nav-item.active > .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0.5rem;
+    right: 0.5rem;
+    bottom: 0.3rem;
+    height: 2px;
+    border-radius: 1px;
+    background-color: var(--global-theme-color);
+  }
+}
+
+// Side columns on the home page: quieter headings
+
+.side-heading,
+.post .side-heading {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--global-text-color-light);
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+
+  a {
+    color: inherit;
+  }
+}
+
+// Home page: photo and news in a side column
+
+.profile.profile-side {
+  width: 100%;
+  margin: 0 0 1.5rem 0;
+
+  .more-info {
+    font-size: 0.85rem;
+    line-height: 1.5;
+  }
+}
+
+.news-side {
+  .news-side-item {
+    padding: 0.7rem 0;
+    border-top: 1px solid var(--global-divider-color);
+    font-size: 0.85rem;
+    line-height: 1.5;
+  }
+
+  .news-side-date {
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--global-text-color-light);
+    margin-bottom: 0.2rem;
+  }
+
+  .news-side-all {
+    display: inline-block;
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+  }
+}
+
+// Home page: the demos ("Try it in your browser")
+
+.demo-list {
+  .demo-thumb {
+    display: block;
+
+    img {
+      width: 100%;
+      transition:
+        box-shadow 0.2s ease,
+        transform 0.2s ease;
+    }
+
+    &:hover img {
+      transform: translateY(-2px);
+      box-shadow:
+        0 4px 10px rgba(0, 0, 0, 0.14),
+        0 1px 3px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  .demo-text {
+    font-size: 0.875rem;
+    line-height: 1.5;
+    margin: 0.6rem 0 0 0;
+  }
+}
+
+// Stacked, in the left column (wide screens)
+.demo-list-side .demo + .demo {
+  margin-top: 1.5rem;
+}
+
+// Image beside the text, in the flow (narrower screens)
+.demo-list-flow {
+  .demo {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    padding: 0.9rem 0;
+    border-top: 1px solid var(--global-divider-color);
+
+    &:last-child {
+      border-bottom: 1px solid var(--global-divider-color);
+    }
+  }
+
+  .demo-thumb {
+    flex: 0 0 11rem;
+  }
+
+  .demo-text {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .demo-list-flow .demo {
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+
+  .demo-list-flow .demo-thumb {
+    flex-basis: auto;
+    width: 100%;
+  }
+}
+
+// Three columns on wide screens: the container grows so the text keeps its width
+@media (min-width: 1200px) {
+  .container-home {
+    max-width: 1140px;
+  }
+
+  // Below the columns, the rest of the page lines up with the text column
+  .post.home article > h2,
+  .post.home article > .publications,
+  .post.home article > .social {
+    margin-left: 25%;
+  }
+}
+
+// Software page: the "try it" strips
+.demo-strip {
+  margin: 1.25rem 0 1.5rem;
+  padding: 1rem;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 6px;
+  background: var(--global-code-bg-color);
+
+  > div:first-child {
+    padding-left: 0;
+  }
+
+  > div:last-child {
+    padding-right: 0;
+  }
+}
+
+// Social icons at the bottom of the home page
+.social .contact-icons {
+  font-size: 3rem;
+}
+
+// Publications: readable year labels, no second rule under the page header
+.publications {
+  h2.bibliography {
+    color: var(--global-text-color-light);
+    font-weight: 500;
+
+    &:first-of-type {
+      border-top: 0;
+      margin-top: 0;
+      padding-top: 0;
+    }
+  }
+}
+
+// CV: flat bordered cards, same radius as the other boxes
+.cv .card {
+  box-shadow: none;
+  border-radius: 6px;
+
+  .card-title {
+    font-size: 1.4rem;
+    margin-top: 0.25rem;
+    margin-bottom: 1rem;
+  }
+}
