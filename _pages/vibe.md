@@ -37,7 +37,7 @@ nav_order: 5
   <img class="vibe-thumb rounded z-depth-1" src="/assets/img/vibe/visor.png" alt="The Visor window showing a bar chart, with the history of figures in the sidebar" loading="lazy">
   <div class="vibe-body">
     <h3>Visor</h3>
-    <p><strong>A small desktop window where Codex and Claude Code show you plots, images and PDF slide decks</strong> while they work from the terminal, together with the skill that tells the agent when to use it. It keeps a history of every version of a figure, follows a file as the agent regenerates it, and has a panel to ask the session that made a figure about it: right-click a point and the question carries a zoomed crop of that spot. It runs locally, with no network ports or API keys.</p>
+    <p><strong>A small desktop window where Codex and Claude Code show you plots, images and PDF slide decks</strong> while they work from the terminal, together with the skill that tells the agent when to use it. It keeps a history of every version of a figure, follows a file as the agent regenerates it, and shows a training or evaluation as a live page with its progress, time left and metric curves. A panel lets you ask the session that made a figure about it: right-click a point and the question carries a zoomed crop of that spot. A laptop can follow a workstation over ssh, so what the agents show there also appears on the laptop. It runs locally, with no network ports or API keys.</p>
     <a href="https://github.com/Fuminides/agent-visor"><i class="fab fa-github"></i> GitHub Repository</a>
   </div>
 </div>
