@@ -34,7 +34,7 @@ nav_order: 5
 </div>
 
 <div class="vibe-item">
-  <img class="vibe-thumb rounded z-depth-1" src="/assets/img/vibe/visor.png" alt="The Visor window showing a bar chart, with the history of figures in the sidebar" loading="lazy">
+  <img class="vibe-thumb rounded z-depth-1" src="/assets/img/vibe/visor.png" alt="The Visor window showing a bar chart, with the history of figures and a live training run in the sidebar" loading="lazy">
   <div class="vibe-body">
     <h3>Visor</h3>
     <p><strong>A small desktop window where Codex and Claude Code show you plots, images and PDF slide decks</strong> while they work from the terminal, together with the skill that tells the agent when to use it. It keeps a history of every version of a figure, follows a file as the agent regenerates it, and shows a training or evaluation as a live page with its progress, time left and metric curves. A panel lets you ask the session that made a figure about it: right-click a point and the question carries a zoomed crop of that spot. A laptop can follow a workstation over ssh, so what the agents show there also appears on the laptop. It runs locally, with no network ports or API keys.</p>
